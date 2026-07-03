@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "Frontend Engineer (Next.js)",
+    "company": "Dexterity Tech",
+    "location": "Hitech City, Hyderabad",
+    "type": "Onsite",
+    "description": [
+      "Build responsive interfaces using Next.js and Tailwind CSS.",
+      "Collaborate with product teams to optimize core web vitals.",
+      "Maintain rigorous CI/CD automation pipelines."
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Junior Full Stack Developer",
+    "company": "Innovate Labs",
+    "location": "Remote",
+    "type": "Remote",
+    "description": [
+      "Assist in maintaining internal web portals and dashboard UIs.",
+      "Write clean, modular code following architectural blueprints.",
+      "Debug client-side routing issues and application state transitions."
+    ]
+  },
+  {
+    "id": "3",
+    "title": "UI/UX Developer",
+    "company": "CloudScale Solutions",
+    "location": "Hitech City, Hyderabad",
+    "type": "Onsite",
+    "description": [
+      "Translate complex wireframes into operational frontend layouts.",
+      "Enforce minimalist design aesthetics across applications.",
+      "Optimize cross-device responsiveness using utility classes."
+    ]
+  }
+]
