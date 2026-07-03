@@ -1,38 +1,497 @@
 [
   {
-    "id": "1",
-    "title": "Frontend Engineer (Next.js)",
-    "company": "Dexterity Tech",
-    "location": "Hitech City, Hyderabad",
+    "id": 1,
+    "title": "Frontend Engineer",
+    "company": "TechNova",
+    "location": "Hyderabad",
     "type": "Onsite",
-    "description": [
-      "Build responsive interfaces using Next.js and Tailwind CSS.",
-      "Collaborate with product teams to optimize core web vitals.",
-      "Maintain rigorous CI/CD automation pipelines."
-    ]
+    "experience": "1-3 years",
+    "description": ["React", "TypeScript", "Tailwind CSS", "Next.js routing"]
   },
   {
-    "id": "2",
-    "title": "Junior Full Stack Developer",
-    "company": "Innovate Labs",
+    "id": 2,
+    "title": "Full Stack Developer",
+    "company": "CloudSync",
     "location": "Remote",
     "type": "Remote",
-    "description": [
-      "Assist in maintaining internal web portals and dashboard UIs.",
-      "Write clean, modular code following architectural blueprints.",
-      "Debug client-side routing issues and application state transitions."
-    ]
+    "experience": "3-5 years",
+    "description": ["Next.js", "Node.js", "PostgreSQL", "AWS deployments"]
   },
   {
-    "id": "3",
-    "title": "UI/UX Developer",
-    "company": "CloudScale Solutions",
-    "location": "Hitech City, Hyderabad",
+    "id": 3,
+    "title": "UI/UX Designer",
+    "company": "DesignFlow",
+    "location": "Bangalore",
     "type": "Onsite",
-    "description": [
-      "Translate complex wireframes into operational frontend layouts.",
-      "Enforce minimalist design aesthetics across applications.",
-      "Optimize cross-device responsiveness using utility classes."
-    ]
+    "experience": "Fresher",
+    "description": ["Figma", "Prototyping", "Wireframing", "User Research"]
+  },
+  {
+    "id": 4,
+    "title": "Data Scientist",
+    "company": "Verdant Labs",
+    "location": "Remote",
+    "type": "Data Science",
+    "experience": "3-5 years",
+    "description": ["Python", "Machine Learning", "TensorFlow", "Data Visualization"]
+  },
+  {
+    "id": 5,
+    "title": "Backend Systems Engineer",
+    "company": "Orbit Finance",
+    "location": "Hyderabad",
+    "type": "Engineering",
+    "experience": "5+ years",
+    "description": ["Go", "Microservices", "Kubernetes", "High-concurrency systems"]
+  },
+  {
+    "id": 6,
+    "title": "React Native Developer",
+    "company": "Startup Inc",
+    "location": "Pune",
+    "type": "Startup",
+    "experience": "1-3 years",
+    "description": ["React Native", "Mobile UI", "App Store Deployment", "Redux"]
+  },
+  {
+    "id": 7,
+    "title": "DevOps Engineer",
+    "company": "Nimbus Cloud",
+    "location": "Hyderabad",
+    "type": "Onsite",
+    "experience": "3-5 years",
+    "description": ["CI/CD Pipelines", "Docker", "GitHub Actions", "Infrastructure as Code"]
+  },
+  {
+    "id": 8,
+    "title": "Junior Software Engineer",
+    "company": "Atlas Robotics",
+    "location": "Chennai",
+    "type": "Software",
+    "experience": "Fresher",
+    "description": ["C++", "Robotics logic", "Basic Algorithms", "Team collaboration"]
+  },
+  {
+    "id": 9,
+    "title": "Lead Product Manager",
+    "company": "Kestrel Health",
+    "location": "Remote",
+    "type": "Remote",
+    "experience": "5+ years",
+    "description": ["Agile methodology", "Product Roadmap", "Stakeholder Management", "Jira"]
+  },
+  {
+    "id": 10,
+    "title": "Machine Learning Intern",
+    "company": "TechNova",
+    "location": "Hyderabad",
+    "type": "Data Science",
+    "experience": "Fresher",
+    "description": ["Python basics", "Data Cleaning", "Jupyter Notebooks", "Assist senior scientists"]
+  },
+  {
+    "id": 11,
+    "title": "Site Reliability Engineer",
+    "company": "Nimbus Cloud",
+    "location": "Bangalore",
+    "type": "Onsite",
+    "experience": "3-5 years",
+    "description": ["On-call rotations", "Prometheus & Grafana", "Incident response", "Terraform"]
+  },
+  {
+    "id": 12,
+    "title": "QA Automation Engineer",
+    "company": "PixelForge",
+    "location": "Pune",
+    "type": "Software",
+    "experience": "1-3 years",
+    "description": ["Selenium", "Cypress", "Test planning", "Regression suites"]
+  },
+  {
+    "id": 13,
+    "title": "Cloud Solutions Architect",
+    "company": "Orbit Finance",
+    "location": "Hyderabad",
+    "type": "Engineering",
+    "experience": "5+ years",
+    "description": ["AWS", "Azure", "Cost optimization", "System design reviews"]
+  },
+  {
+    "id": 14,
+    "title": "Growth Marketing Manager",
+    "company": "Bloomtrail",
+    "location": "Remote",
+    "type": "Remote",
+    "experience": "3-5 years",
+    "description": ["Performance marketing", "A/B testing", "SEO strategy", "Funnel analytics"]
+  },
+  {
+    "id": 15,
+    "title": "Data Analyst",
+    "company": "Verdant Labs",
+    "location": "Bangalore",
+    "type": "Data Science",
+    "experience": "1-3 years",
+    "description": ["SQL", "Power BI", "Dashboarding", "Stakeholder reporting"]
+  },
+  {
+    "id": 16,
+    "title": "Founding Engineer",
+    "company": "Loopwave",
+    "location": "Remote",
+    "type": "Startup",
+    "experience": "3-5 years",
+    "description": ["Own the stack end-to-end", "Rapid prototyping", "Fundraising support", "Wear many hats"]
+  },
+  {
+    "id": 17,
+    "title": "Security Engineer",
+    "company": "Fortknight Systems",
+    "location": "Hyderabad",
+    "type": "Engineering",
+    "experience": "5+ years",
+    "description": ["Penetration testing", "SOC2 compliance", "Threat modeling", "Incident response"]
+  },
+  {
+    "id": 18,
+    "title": "Technical Writer",
+    "company": "DocuStack",
+    "location": "Chennai",
+    "type": "Onsite",
+    "experience": "1-3 years",
+    "description": ["API documentation", "Developer guides", "Markdown & Docusaurus", "Cross-team interviews"]
+  },
+  {
+    "id": 19,
+    "title": "Product Designer",
+    "company": "Loopwave",
+    "location": "Remote",
+    "type": "Startup",
+    "experience": "1-3 years",
+    "description": ["Design systems", "Figma", "User testing", "0-to-1 product design"]
+  },
+  {
+    "id": 20,
+    "title": "Backend Engineer (Node.js)",
+    "company": "CloudSync",
+    "location": "Bangalore",
+    "type": "Engineering",
+    "experience": "1-3 years",
+    "description": ["Node.js", "REST APIs", "MongoDB", "Redis caching"]
+  },
+  {
+    "id": 21,
+    "title": "AI Research Engineer",
+    "company": "Verdant Labs",
+    "location": "Remote",
+    "type": "Data Science",
+    "experience": "5+ years",
+    "description": ["LLM fine-tuning", "PyTorch", "Research papers", "Experiment tracking"]
+  },
+  {
+    "id": 22,
+    "title": "IT Support Specialist",
+    "company": "Orbit Finance",
+    "location": "Hyderabad",
+    "type": "Onsite",
+    "experience": "Fresher",
+    "description": ["Helpdesk tickets", "Windows & Linux basics", "Hardware troubleshooting", "Asset management"]
+  },
+  {
+    "id": 23,
+    "title": "Software Architect",
+    "company": "Fortknight Systems",
+    "location": "Bangalore",
+    "type": "Software",
+    "experience": "5+ years",
+    "description": ["System design", "Architecture reviews", "Scalability planning", "Mentoring engineers"]
+  },
+  {
+    "id": 24,
+    "title": "Growth Hacker",
+    "company": "Startup Inc",
+    "location": "Pune",
+    "type": "Startup",
+    "experience": "1-3 years",
+    "description": ["Viral loops", "Referral programs", "Analytics instrumentation", "Rapid experimentation"]
+  },
+  {
+    "id": 25,
+    "title": "Mobile App Developer (iOS)",
+    "company": "PixelForge",
+    "location": "Chennai",
+    "type": "Onsite",
+    "experience": "3-5 years",
+    "description": ["Swift", "SwiftUI", "App Store release cycle", "Core Data"]
+  },
+  {
+    "id": 26,
+    "title": "Data Engineer",
+    "company": "Orbit Finance",
+    "location": "Hyderabad",
+    "type": "Data Science",
+    "experience": "3-5 years",
+    "description": ["Apache Spark", "Airflow pipelines", "Data warehousing", "ETL design"]
+  },
+  {
+    "id": 27,
+    "title": "Platform Engineer",
+    "company": "Nimbus Cloud",
+    "location": "Remote",
+    "type": "Engineering",
+    "experience": "3-5 years",
+    "description": ["Internal developer platforms", "Kubernetes operators", "Service mesh", "Golang tooling"]
+  },
+  {
+    "id": 28,
+    "title": "Business Analyst",
+    "company": "Kestrel Health",
+    "location": "Mumbai",
+    "type": "Onsite",
+    "experience": "1-3 years",
+    "description": ["Requirements gathering", "Process mapping", "Excel modeling", "Cross-functional coordination"]
+  },
+  {
+    "id": 29,
+    "title": "Junior Data Scientist",
+    "company": "Verdant Labs",
+    "location": "Hyderabad",
+    "type": "Data Science",
+    "experience": "Fresher",
+    "description": ["Statistics fundamentals", "Pandas & NumPy", "Model evaluation basics", "Report writing"]
+  },
+  {
+    "id": 30,
+    "title": "Customer Success Manager",
+    "company": "Bloomtrail",
+    "location": "Remote",
+    "type": "Remote",
+    "experience": "3-5 years",
+    "description": ["Account renewals", "Onboarding flows", "Churn analysis", "Client relationship management"]
+  },
+  {
+    "id": 31,
+    "title": "Embedded Systems Engineer",
+    "company": "Atlas Robotics",
+    "location": "Chennai",
+    "type": "Engineering",
+    "experience": "3-5 years",
+    "description": ["C/C++", "RTOS", "Sensor integration", "Firmware debugging"]
+  },
+  {
+    "id": 32,
+    "title": "Technical Recruiter",
+    "company": "TalentBridge",
+    "location": "Remote",
+    "type": "Remote",
+    "experience": "1-3 years",
+    "description": ["Sourcing pipelines", "Technical screening", "ATS management", "Offer negotiation"]
+  },
+  {
+    "id": 33,
+    "title": "Software Engineer II",
+    "company": "TechNova",
+    "location": "Bangalore",
+    "type": "Software",
+    "experience": "3-5 years",
+    "description": ["Java", "Spring Boot", "Distributed systems", "Code reviews"]
+  },
+  {
+    "id": 34,
+    "title": "Network Engineer",
+    "company": "Fortknight Systems",
+    "location": "Hyderabad",
+    "type": "Onsite",
+    "experience": "3-5 years",
+    "description": ["Cisco routing & switching", "VPN configuration", "Firewall management", "Network monitoring"]
+  },
+  {
+    "id": 35,
+    "title": "Startup Operations Associate",
+    "company": "Loopwave",
+    "location": "Pune",
+    "type": "Startup",
+    "experience": "Fresher",
+    "description": ["Vendor coordination", "Ops dashboards", "Process documentation", "General problem-solving"]
+  },
+  {
+    "id": 36,
+    "title": "Business Intelligence Analyst",
+    "company": "Kestrel Health",
+    "location": "Remote",
+    "type": "Data Science",
+    "experience": "1-3 years",
+    "description": ["Looker / Tableau", "SQL pipelines", "KPI reporting", "Data storytelling"]
+  },
+  {
+    "id": 37,
+    "title": "Application Developer (.NET)",
+    "company": "DocuStack",
+    "location": "Noida",
+    "type": "Software",
+    "experience": "1-3 years",
+    "description": ["C#", ".NET Core", "SQL Server", "Azure DevOps"]
+  },
+  {
+    "id": 38,
+    "title": "SEO Specialist",
+    "company": "Bloomtrail",
+    "location": "Remote",
+    "type": "Remote",
+    "experience": "1-3 years",
+    "description": ["Keyword research", "On-page optimization", "Content audits", "Backlink strategy"]
+  },
+  {
+    "id": 39,
+    "title": "Robotics Software Engineer",
+    "company": "Atlas Robotics",
+    "location": "Chennai",
+    "type": "Engineering",
+    "experience": "3-5 years",
+    "description": ["ROS", "Path planning", "Computer vision basics", "Simulation testing"]
+  },
+  {
+    "id": 40,
+    "title": "Junior QA Engineer",
+    "company": "PixelForge",
+    "location": "Pune",
+    "type": "Software",
+    "experience": "Fresher",
+    "description": ["Manual testing", "Bug tracking", "Test case writing", "Basic scripting"]
+  },
+  {
+    "id": 41,
+    "title": "Product Manager, Growth",
+    "company": "CloudSync",
+    "location": "Remote",
+    "type": "Remote",
+    "experience": "5+ years",
+    "description": ["Growth loops", "Experiment roadmaps", "Cross-functional leadership", "Metrics ownership"]
+  },
+  {
+    "id": 42,
+    "title": "HR Coordinator",
+    "company": "TalentBridge",
+    "location": "Hyderabad",
+    "type": "Onsite",
+    "experience": "1-3 years",
+    "description": ["Employee onboarding", "HRMS management", "Policy documentation", "Engagement events"]
+  },
+  {
+    "id": 43,
+    "title": "Machine Learning Engineer",
+    "company": "Verdant Labs",
+    "location": "Bangalore",
+    "type": "Data Science",
+    "experience": "3-5 years",
+    "description": ["Model deployment", "MLOps pipelines", "Feature stores", "A/B testing frameworks"]
+  },
+  {
+    "id": 44,
+    "title": "Frontend Developer (Vue.js)",
+    "company": "DesignFlow",
+    "location": "Remote",
+    "type": "Remote",
+    "experience": "1-3 years",
+    "description": ["Vue 3", "Pinia state management", "Component libraries", "Accessibility basics"]
+  },
+  {
+    "id": 45,
+    "title": "Infrastructure Engineer",
+    "company": "Nimbus Cloud",
+    "location": "Hyderabad",
+    "type": "Engineering",
+    "experience": "5+ years",
+    "description": ["Terraform modules", "Multi-cloud strategy", "Cost governance", "Disaster recovery planning"]
+  },
+  {
+    "id": 46,
+    "title": "Content Strategist",
+    "company": "Bloomtrail",
+    "location": "Remote",
+    "type": "Remote",
+    "experience": "3-5 years",
+    "description": ["Editorial calendars", "Brand voice guidelines", "Content performance analysis", "Cross-channel campaigns"]
+  },
+  {
+    "id": 47,
+    "title": "Software Engineer, Payments",
+    "company": "Orbit Finance",
+    "location": "Mumbai",
+    "type": "Engineering",
+    "experience": "3-5 years",
+    "description": ["Payment gateways", "Idempotent transaction design", "PCI-DSS awareness", "Fraud detection basics"]
+  },
+  {
+    "id": 48,
+    "title": "Founding Product Designer",
+    "company": "Loopwave",
+    "location": "Remote",
+    "type": "Startup",
+    "experience": "3-5 years",
+    "description": ["Brand identity", "Landing page design", "User interviews", "Rapid iteration"]
+  },
+  {
+    "id": 49,
+    "title": "Database Administrator",
+    "company": "Fortknight Systems",
+    "location": "Hyderabad",
+    "type": "Onsite",
+    "experience": "5+ years",
+    "description": ["PostgreSQL tuning", "Backup & recovery", "Replication strategy", "Query optimization"]
+  },
+  {
+    "id": 50,
+    "title": "Junior Backend Developer",
+    "company": "TechNova",
+    "location": "Chennai",
+    "type": "Software",
+    "experience": "Fresher",
+    "description": ["Python", "Flask basics", "REST fundamentals", "Git workflows"]
+  },
+  {
+    "id": 51,
+    "title": "Data Visualization Engineer",
+    "company": "Kestrel Health",
+    "location": "Remote",
+    "type": "Data Science",
+    "experience": "1-3 years",
+    "description": ["D3.js", "Interactive dashboards", "Storytelling with data", "Chart libraries"]
+  },
+  {
+    "id": 52,
+    "title": "Solutions Engineer",
+    "company": "CloudSync",
+    "location": "Bangalore",
+    "type": "Engineering",
+    "experience": "3-5 years",
+    "description": ["Pre-sales support", "API integrations", "Customer demos", "Technical proposals"]
+  },
+  {
+    "id": 53,
+    "title": "Operations Analyst",
+    "company": "Startup Inc",
+    "location": "Pune",
+    "type": "Startup",
+    "experience": "Fresher",
+    "description": ["Data entry & reporting", "Process improvement", "Vendor tracking", "Spreadsheet automation"]
+  },
+  {
+    "id": 54,
+    "title": "iOS Developer",
+    "company": "PixelForge",
+    "location": "Remote",
+    "type": "Remote",
+    "experience": "3-5 years",
+    "description": ["Swift", "Combine framework", "Unit testing", "App performance tuning"]
+  },
+  {
+    "id": 55,
+    "title": "Principal Software Engineer",
+    "company": "Fortknight Systems",
+    "location": "Hyderabad",
+    "type": "Software",
+    "experience": "5+ years",
+    "description": ["Technical strategy", "Cross-team architecture", "Mentorship program design", "Legacy system modernization"]
   }
 ]

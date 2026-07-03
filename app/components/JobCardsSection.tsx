@@ -7,6 +7,7 @@ export interface Job {
   location: string;
   type: string;
   description: string[];
+  experience?: string;
 }
 
 interface JobCardsSectionProps {
@@ -34,6 +35,14 @@ export default function JobCardsSection({
   onToggleSavedOnly,
   onClearFilters,
 }: JobCardsSectionProps) {
+  
+  const handleCardKeyDown = (e: React.KeyboardEvent<HTMLDivElement>, job: Job) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onSelectJob(job);
+    }
+  };
+
   return (
     <section id="jobs-section" style={{ maxWidth: "1160px", margin: "80px auto 0", padding: "0 24px", position: "relative", zIndex: 10 }}>
       {/* Section Header */}
@@ -101,6 +110,9 @@ export default function JobCardsSection({
               <div
                 key={job.id}
                 onClick={() => onSelectJob(job)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => handleCardKeyDown(e, job)}
                 style={{
                   background: "#ffffff",
                   border: "1px solid #E7E9F2",

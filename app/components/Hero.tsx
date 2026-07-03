@@ -3,18 +3,27 @@
 interface HeroProps {
   searchTerm: string;
   locationTerm: string;
+  experienceTerm: string;
+  selectedCategory?: string;
   onSearchChange: (val: string) => void;
   onLocationChange: (val: string) => void;
-  onSearchSubmit: () => void;
+  onExperienceChange: (val: string) => void;
+  onCategoryChange?: (val: string) => void;
 }
 
 export default function Hero({
   searchTerm,
   locationTerm,
+  experienceTerm,
   onSearchChange,
   onLocationChange,
-  onSearchSubmit,
+  onExperienceChange,
 }: HeroProps) {
+  const handleSearchClick = () => {
+    // Smooth scroll down to the results
+    document.getElementById("jobs-section")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="hero">
       <span className="eyebrow"><span className="dot"></span> Built by Dev-Danish</span>
@@ -26,6 +35,7 @@ export default function Hero({
 
       <div className="search-wrap">
         <div className="search-bar">
+          
           <div className="search-field">
             <svg width="18" height="18" className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="11" cy="11" r="7"/>
@@ -33,20 +43,27 @@ export default function Hero({
             </svg>
             <input
               type="text"
+              aria-label="Search by skills, designations, or companies"
               placeholder="Enter skills / designations / companies"
               value={searchTerm}
               onChange={(e) => onSearchChange(e.target.value)}
             />
           </div>
+
           <div className="search-field exp">
-            <select>
-              <option>Select experience</option>
-              <option>Fresher</option>
-              <option>1–3 years</option>
-              <option>3–5 years</option>
-              <option>5+ years</option>
+            <select 
+              aria-label="Filter by experience level"
+              value={experienceTerm}
+              onChange={(e) => onExperienceChange(e.target.value)}
+            >
+              <option value="Select experience">Select experience</option>
+              <option value="Fresher">Fresher</option>
+              <option value="1-3 years">1-3 years</option>
+              <option value="3-5 years">3-5 years</option>
+              <option value="5+ years">5+ years</option>
             </select>
           </div>
+
           <div className="search-field loc">
             <svg width="18" height="18" className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
@@ -54,12 +71,14 @@ export default function Hero({
             </svg>
             <input
               type="text"
+              aria-label="Search by location"
               placeholder="Enter location"
               value={locationTerm}
               onChange={(e) => onLocationChange(e.target.value)}
             />
           </div>
-          <button className="search-submit" onClick={onSearchSubmit}>
+
+          <button className="search-submit" onClick={handleSearchClick}>
             <span>Search</span>
           </button>
         </div>
