@@ -1,35 +1,32 @@
-# AI-Driven Job Board 
+# AI-Driven Job Board Assessment
 
 ## Project Overview
-This project is a high-performance, responsive job board built as a technical assessment for the Software Engineer position at Dexterity. It features client-side search and filtering capabilities, backed by a static JSON data layer to ensure zero-latency querying and maximum deployment stability. 
+This project is a high-performance, frontend-focused job board built as a technical assessment for the Software Engineer position. It features a fully responsive UI, instantaneous search and filtering capabilities, and a seamless application modal workflow. To ensure zero latency and eliminate database connection points of failure during evaluation, the data layer utilizes a static JSON architecture.
 
 ## Tech Stack
-* **Frontend Framework:** Next.js (App Router)
-* **Styling:** Tailwind CSS
-* **Data Layer:** Local JSON Mock Database
-* **Deployment & CI/CD:** GitHub Actions & Vercel CLI
+*   **Frontend Framework:** Next.js (App Router) 
+*   **Styling:** Tailwind CSS 
+*   **Language:** TypeScript 
+*   **CI/CD & Deployment:** GitHub Actions to Vercel 
 
-## UX Decisions
-* **Minimalist Aesthetics:** Implemented a clean, modern interface using Tailwind's utility classes to reduce cognitive load, prioritizing readability and essential job data.
-* **Responsive Design:** Engineered to scale flawlessly from mobile devices to desktop monitors using CSS grid and flexbox logic.
-* **Compound State Management:** Utilized React's `useState` and `useMemo` to intersect search queries and category filters simultaneously.
-* **Graceful Degradation:** Designed a dedicated "Empty State" UI that clearly communicates to the user when a specific search criteria yields no results, preventing blank screens or system crashes.
+## UX & UI Decisions
+The application was designed with a modern, minimalist aesthetic to prioritize usability and speed:
+*   **Visual Hierarchy & Styling:** Utilizes a clean, light/dark responsive theme featuring animated background orbs and glassmorphism elements in the sticky header for a premium feel. 
+*   **State Management & Filtering:** Built with React `useState` and `useMemo` to handle real-time, instantaneous filtering across search inputs, location constraints, and job categories (e.g., Remote vs. Onsite). The filters dynamically intersect, ensuring accurate results.
+*   **Edge Case Handling:** Features a robust "Empty State" UI. If a user inputs criteria that yield no results, the application gracefully presents a custom "No matching roles found" message with a prompt to reset filters, preventing blank screens or crashes.
+*   **Client-Side Persistence:** Bookmarked jobs and application states are persisted seamlessly using browser `localStorage`.
 
 ## CI/CD Architecture
-This repository bypasses standard auto-deployment in favor of a robust, custom CI/CD pipeline. 
-1. A GitHub Actions YAML file (`deploy.yml`) listens for any push to the `main` branch.
-2. Upon triggering, it provisions an Ubuntu runner and installs the Vercel CLI.
-3. The pipeline securely authenticates using repository secrets (`VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`).
-4. It pulls the production environment variables, builds the Next.js artifacts, and forces a prebuilt deployment directly to Vercel's servers.
+This repository implements a custom Continuous Integration and Continuous Deployment (CI/CD) pipeline via GitHub Actions, bypassing standard auto-deploy configurations. 
 
-## Local Setup
+1. **Trigger:** The pipeline listens for any `push` event to the `main` branch.
+2. **Environment:** It initializes an `ubuntu-latest` runner and fetches the repository code.
+3. **Vercel CLI Integration:** It globally installs the Vercel CLI (`npm install --global vercel@latest`).
+4. **Authentication & Deployment:** Using securely stored GitHub Repository Secrets (`VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`), the pipeline authenticates with Vercel, pulls the production environment variables, builds the Next.js artifacts, and forces a prebuilt production deployment directly to Vercel's edge network.
+
+## Local Setup Instructions
 To run this project locally, execute the following commands in your terminal:
 
-\`\`\`bash
-# Install dependencies
-npm install
-
-# Start the local development server
-npm run dev
-\`\`\`
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+1. Clone the repository:
+   ```bash
+   git clone <your-public-repo-url>

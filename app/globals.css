@@ -271,6 +271,7 @@ footer {
   margin-top: 130px; padding: 50px 24px 40px; text-align: center;
   color: var(--ink-soft); font-size: 13.5px; position: relative; z-index: 2;
   border-top: 1px solid var(--line);
+  
 }
 
 @media (max-width: 760px){
